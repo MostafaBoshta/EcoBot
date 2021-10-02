@@ -1,0 +1,124 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    MDToolbar:
+    	
+        canvas:
+            Rectangle:
+                source: 'ECOBOT.png'
+                pos: self.pos 
+                size: (80, 60)
+        md_bg_color: .2,.2,.2,1
+        MDTextButton:
+            text: "Press"
+            custom_color: 0, 1, 0, 1
+
+    MDBottomNavigation:
+       
+        MDBottomNavigationItem:
+            name: 'screen 1'
+            text: "Monitoring"
+            icon: 'television'
+           
+            MDRoundFlatButton:
+                text: "Press"
+                custom_color: 0, 1, 0, 1
+
+           
+            MDLabel:
+                text: "Monitoring widget"
+                halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'screen 2'
+            text: "SetUp"
+            icon: 'cog-outline'
+
+            MDLabel:
+                text: "SetUp Widget"
+                halign: 'center'
+
+
+        MDBottomNavigationItem:
+            name: 'screen 3'
+            text: "Configure"
+            icon: 'wrench'
+            #wrench
+            #key-variant
+
+            MDLabel:
+                text: "Configure Widget"
+                halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'screen 4'
+            text: "Mode"
+            icon: 'head-question'
+
+            MDLabel:
+                text: "Mode Widget"
+                halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'screen 5'
+            text: "Communication"
+            icon: 'antenna'
+
+
+            MDLabel:
+                text: "Communication Widget"
+                halign: 'center'                                
+
+
+        MDBottomNavigationItem:
+            name: 'screen 6'
+            text: "Navigation"
+            icon: 'eye-outline'
+
+ 			#navigation-variant
+            #zmdi-eye
+ 			#database-eye-outline  
+            MDLabel:
+                text: "Navigation Widget"
+                halign: 'center' 
+
+        MDBottomNavigationItem:
+            name: 'screen 7'
+            text: "Sensors"
+            icon: 'graph'
+         
+            MDFloatLayout:
+                layout: app.speedmeter()
+
+        
+        MDBottomNavigationItem:
+            name: 'screen 8'
+            text: "SWAT CALL"
+            icon: 'phone-outline'
+
+            MDLabel:
+                text: "SWAT Widget"
+                halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'screen 9'
+            text: "About"
+            icon: 'account-search'
+
+            MDLabel:
+                text: "About Widget"
+                halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'screen 10'
+            text: "Help"
+            icon: 'book-open-blank-variant'
+
+            MDLabel:
+                text: "Help Widget"
+                halign: 'center'
+
+
+       
+
+            
